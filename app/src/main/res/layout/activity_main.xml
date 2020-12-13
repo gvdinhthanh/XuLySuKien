@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/maunau"
+        android:layout_margin="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/buttonMauDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/maudo"
+        android:onClick="click_chonMauDo"
+        android:text="ĐỎ"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgHinh" />
+    <Button
+        android:id="@+id/buttonMauCam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/maucam"
+        android:text="CAM"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonMauDo"
+        app:layout_constraintTop_toBottomOf="@+id/imgHinh" />
+    <Button
+        android:id="@+id/buttonMauVang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/mauvang"
+        android:text="VÀNG"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonMauCam"
+        app:layout_constraintTop_toBottomOf="@+id/imgHinh" />
+
+    <Button
+        android:id="@+id/buttonMauXanhLaCay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/mauxanhlacay"
+        android:text="LỤC"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMauXanhNuocBien"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMauDo" />
+
+    <Button
+        android:id="@+id/buttonMauXanhNuocBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/mauxanhnuocbien"
+        android:text="LAM"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/buttonMauXanhLaCay"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMauDo" />
+
+    <Button
+        android:id="@+id/buttonMauTim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/mautim"
+        android:text="TÍM"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/buttonMauXanhNuocBien"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMauDo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
